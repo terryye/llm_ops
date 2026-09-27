@@ -1,0 +1,4 @@
+neu_llmops_homework01/data/
+__pycache__/
+.venv/
+.env

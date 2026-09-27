@@ -1,0 +1,13 @@
+# Stage 1: collection
+datasets>=3.0   # needs IterableDataset.shard / .num_shards
+huggingface-hub>=0.23
+tqdm>=4.66
+
+# Stage 3: tokenization
+transformers>=4.40
+numpy>=1.24
+
+# Stage 4: data loaders
+# CPU-only wheels are enough for this assignment; install with
+#   pip install --index-url https://download.pytorch.org/whl/cpu torch
+torch>=2.2
