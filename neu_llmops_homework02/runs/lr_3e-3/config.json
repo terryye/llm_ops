@@ -1,0 +1,67 @@
+{
+  "train_config": {
+    "name": "lr_3e-3",
+    "out_dir": "runs",
+    "tokens_dir": "/home/terryye/github/terryye/llm_ops/neu_llmops_homework01/data/tokens",
+    "n_layer": 2,
+    "n_embd": 128,
+    "n_head": 4,
+    "dropout": 0.0,
+    "seq_len": 128,
+    "train_tokens": 1572864,
+    "val_tokens": 131072,
+    "final_val_tokens": 524288,
+    "epochs": 2,
+    "batch_size": 32,
+    "micro_batch_size": 16,
+    "lr": 0.003,
+    "min_lr_ratio": 0.1,
+    "warmup_frac": 0.05,
+    "weight_decay": 0.1,
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "grad_clip": 1.0,
+    "evals_per_epoch": 4,
+    "log_every": 10,
+    "seed": 1337,
+    "device": "auto",
+    "precision": "auto",
+    "num_workers": 2
+  },
+  "model_config": {
+    "vocab_size": 50257,
+    "block_size": 128,
+    "n_layer": 2,
+    "n_embd": 128,
+    "n_head": 4,
+    "dropout": 0.0
+  },
+  "parameters": {
+    "token_embedding": 6432896,
+    "position_embedding": 16384,
+    "transformer_blocks": 396544,
+    "final_layernorm": 256,
+    "total": 6846080
+  },
+  "precision": "float32",
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.14.0+cu130",
+    "platform": "Linux-6.8.0-142-generic-x86_64-with-glibc2.39",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce GTX 1650",
+    "gpu_memory_gb": 3.9,
+    "cuda": "13.0"
+  },
+  "data": {
+    "tokens_dir": "/home/terryye/github/terryye/llm_ops/neu_llmops_homework01/data/tokens",
+    "tokenizer": "gpt2",
+    "train_pages": 1536,
+    "train_tokens_per_epoch": 1572864,
+    "val_tokens_periodic": 131072,
+    "val_tokens_full": 524288
+  },
+  "steps_per_epoch": 384,
+  "total_steps": 768,
+  "tokens_per_step": 4096
+}

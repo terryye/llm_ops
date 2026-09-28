@@ -1,0 +1,16 @@
+# Model and training. Install the build matching your hardware:
+#   NVIDIA GPU:  pip install torch  (Linux wheels include CUDA)
+#   CPU only:    pip install --index-url https://download.pytorch.org/whl/cpu torch
+#   Apple M1+:   pip install torch  (includes the MPS backend)
+torch>=2.2
+numpy>=1.24
+
+# Decoding samples (GPT-2 tokenizer, as used in Assignment 1)
+transformers>=4.40
+
+# Figures and report
+matplotlib>=3.8
+reportlab>=4.0
+
+# Tests
+pytest>=8

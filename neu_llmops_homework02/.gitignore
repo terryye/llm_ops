@@ -1,0 +1,10 @@
+# Resumable training state is ~3x the exported checkpoint and not a deliverable.
+runs/*/checkpoint.pt
+runs/*/checkpoint.tmp
+
+# Smoke-test outputs
+*_smoke/
+*_smoke.json
+*_smoke.pdf
+
+.pytest_cache/

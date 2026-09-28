@@ -1,0 +1,44 @@
+{
+  "name": "batch_64",
+  "finished_utc": "2026-09-28T04:21:13.927298+00:00",
+  "parameters": {
+    "token_embedding": 6432896,
+    "position_embedding": 16384,
+    "transformer_blocks": 396544,
+    "final_layernorm": 256,
+    "total": 6846080
+  },
+  "steps": 384,
+  "tokens_seen": 3145728,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 7.490853786468506,
+      "train_ppl": 1791.5810667137548,
+      "val_loss": 6.658125974237919,
+      "val_ppl": 779.0895343429453
+    },
+    {
+      "epoch": 2,
+      "train_loss": 6.422074317932129,
+      "train_ppl": 615.2780736741352,
+      "val_loss": 6.4596531465649605,
+      "val_ppl": 638.8394344842943
+    }
+  ],
+  "final_val_loss": 6.4525443483144045,
+  "final_val_ppl": 634.3141575275641,
+  "final_val_tokens": 524288,
+  "best_periodic_val_loss": 6.4596531465649605,
+  "median_tokens_per_sec": 24168.49088200423,
+  "train_seconds_this_session": 180.1,
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.14.0+cu130",
+    "platform": "Linux-6.8.0-142-generic-x86_64-with-glibc2.39",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce GTX 1650",
+    "gpu_memory_gb": 3.9,
+    "cuda": "13.0"
+  }
+}

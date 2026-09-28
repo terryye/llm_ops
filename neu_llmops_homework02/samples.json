@@ -1,0 +1,24 @@
+{
+  "checkpoint": "mini_gpt_checkpoint.pt",
+  "run": "embd_256",
+  "settings": {
+    "tokens": 40,
+    "temperature": 0.8,
+    "top_k": 40,
+    "seed": 0
+  },
+  "samples": [
+    {
+      "prompt": "The history of the city",
+      "completion": ".\n\nhe was at a major house to play with a record of the first time where he was a single-year-old and was a year.\nthe final. the first time,"
+    },
+    {
+      "prompt": "Scientists announced on Tuesday that",
+      "completion": " will be a lot of the day.\nin the first, he is a big house of one of us at the game, but i have two of the best.\nthe game i thought you"
+    },
+    {
+      "prompt": "In computer science, a",
+      "completion": " member of new hartio, a british man who served for the new zealand-year-american male and the city in the united states\n\n|\ncolonel viet"
+    }
+  ]
+}
